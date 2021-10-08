@@ -1,0 +1,220 @@
+.portfolio-nav{
+    background: rgba(52, 54, 61, 0.6);
+    font-size: 0.6em;
+    z-index: 5;
+}
+.pn-item{
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0;
+    padding: 14px 0;
+}
+.pn-item:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.3)
+}
+.pn-item.selected{
+    background: rgba(255, 255, 255, 0.2)
+}
+.project-logo{
+    padding: 0 0.8em;
+}
+.project-logo .logo-img{
+    display: inline-block;
+    position: relative;
+    background-size: 150px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 19px;
+    overflow: hidden;
+    background: rgba(2, 2, 2, 0.1);
+    box-shadow: 0 0 4px 0;
+}
+.project-logo .logo-light{
+    position: absolute;
+    top: 0;
+    left: 48px;
+    width: 132%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 70%;
+    transform: rotatez(
+129deg);
+}
+.project-name{
+    font-size: 30px;
+    margin-top: -23px;
+}
+.project-desc{
+    font-size: 16px;
+    margin-top: -4px;
+}
+.project-available{
+    font-size: 16px;
+}
+.portfolio-header{
+    background: rgba(25, 26, 19, 0.4);
+    background: rgba(52, 54, 61, 0.6);
+    box-shadow: 13px 3px 12px 0px black;
+}
+.pf-image-container{
+    perspective: 900px;
+}
+.pf-img{
+    transform: rotatey(30deg) rotatex(7deg) translate3d(30px, 11px, 0px);
+    box-shadow: -20px 19px 18px -5px black;
+    overflow: hidden;
+}
+.pf-img.selected{
+    animation-name: selected-pf-img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out
+}
+.pf-img.selected .pf-imgae-lighter{
+    animation-name: selected-pf-light;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out
+}
+.pf-img, .pf-img img{
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+.pf-img img{
+    opacity: 0.94;
+}
+.pf-imgae-lighter{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 200%;
+    height: 500%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate3d(-40px, -20px, 0);
+    border-radius: 50%;
+}
+.porfolio-info{
+    line-height: 25px;
+}
+.pf-btn{
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0px white;
+    padding: 0 10px;
+    transition: 0.3s;
+    font-size: 0.7em;
+}
+.pf-btn:hover{
+    box-shadow: 0 0 5px 0px white;
+    background: white;
+    color: #2A2B34;
+    transition: 0.3s;
+}
+.hide-card{
+    animation-name: hide-card;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.hide-light{
+    animation-name: hide-light;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.show-card{
+    animation-name: show-card;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.show-light{
+    animation-name: show-light;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes selected-pf-img {
+    0% {
+        transform:  rotatey(30deg) 
+                    rotatex(7deg) 
+                    translate3d(10px, 11px, 0px);
+        box-shadow: -20px 19px 18px -5px black;                    
+        }
+    25%{
+        transform:  rotatey(-20deg) 
+                    rotatex(10deg) 
+                    translate3d(10px, 11px, 0px);
+        box-shadow: 0px 15px 18px -5px black;
+        }
+    60%{
+        transform:  rotatey(30deg) 
+                    rotatex(12deg) 
+                    translate3d(10px, 11px, 0px);
+        box-shadow: -20px 12px 18px -5px black;                    
+        opacity: 1;
+        }        
+    100%{
+        transform:  rotatey(30deg) 
+                    rotatex(7deg) 
+                    translate3d(10px, 11px, 0px);
+        box-shadow: -20px 19px 18px -5px black; 
+        }
+}
+@keyframes selected-pf-light {
+    0%{
+        transform: translate3d(-40px, -20px, 0);
+    }
+    25%{
+        transform: translate3d(222px, -15px, 0);
+    }
+    60%{
+        transform: translate3d(20px, -10px, 0);
+    }
+    100%{
+        transform: translate3d(-40px, -20px, 0);
+    }
+}
+@keyframes hide-card {
+    100%{
+        transform: translateX(-500px) translateZ(-400px);
+        opacity: 0;
+    }
+}
+@keyframes hide-light {
+    100%{
+        transform: translate(442px, -218px);
+    }
+}
+@keyframes show-card {
+    0%{
+        transform:  rotatey(63deg) 
+                    rotatex(20deg) 
+                    translate3d(59px, 81px, 263px);
+        box-shadow: -20px 19px 18px -5px black;
+        opacity: 0;
+    }
+    100%{
+        transform:  rotatey(30deg) 
+                    rotatex(7deg) 
+                    translate3d(10px, 11px, 0px);
+        box-shadow: -20px 19px 18px -5px black;                    
+        opacity: 1;
+    }
+}
+@keyframes show-light {
+    0%{
+        transform: translate3d(222px, -20px, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate3d(-40px, -20px, 0);
+        opacity: 1;
+    }
+}
