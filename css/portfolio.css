@@ -140,6 +140,20 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.hide-page{
+    animation: hidePage;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.show-page{
+    animation: showPage;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 @keyframes selected-pf-img {
     0% {
         transform:  rotatey(30deg) 
@@ -215,6 +229,23 @@
     }
     100%{
         transform: translate3d(-40px, -20px, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes hidePage {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes showPage {
+    0%{
+        opacity: 0;
+    }
+    100%{
         opacity: 1;
     }
 }

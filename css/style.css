@@ -279,12 +279,13 @@ body {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px -1px;
   transition: 0.5s;
   cursor: pointer;
 }
+
 .btn-next:hover {
   background: rgba(255, 255, 255);
   color: darkcyan;
@@ -411,14 +412,28 @@ body {
 
 .slideUp{
     animation: slideUp;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
 .slideInFromDown{
     animation: slideInFromDown;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.slideDown{
+    animation: slideDown;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.slideInFromUp{
+    animation: slideInFromUp;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -453,6 +468,19 @@ body {
 @keyframes slideInFromDown {
     0%{
         transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes slideDown {
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes slideInFromUp {
+    0%{
+        transform: translateY(-100%);
     }
     100%{
         transform: translateY(0%);
