@@ -1,0 +1,55 @@
+.cm-icon.inline-block.va-middle {
+    width: 1.5em;
+    text-align: center;
+    font-size: 1em;
+    color: royalblue;
+}
+.cm-value a{
+    color: cornflowerblue;
+    text-shadow: 0 0 11px black;
+    text-decoration: none;
+}
+.cm-info-container{
+    box-shadow: 0 0 2px 0;
+    margin: 0.2em;
+    background: rgba(0, 0, 0, 0.2);
+    padding-right: 1em;
+    transition: 0.7s;
+}
+.cm-info-container:hover{
+    background: rgba(20, 36, 114, 0.2);
+    transition: 0.7s;
+    color: white !important;
+}
+/* screens [], [], [] ,[1020, ..] */
+@media only screen and (min-width: 570px){
+    
+}
+  
+@media only screen and (min-width: 430px) and (max-width: 570px) {
+    .cm-info-container{
+        font-size: 0.7em;
+        margin: 0.4em;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 430px) {
+    .cm-info-container{
+        font-size: 0.5em;
+        margin: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+    .cm-info-container{
+        font-size: 0.4em;
+        margin: 0.6em;
+    }
+}
+
+@media only screen and (min-width: 180px) and (max-width: 240px) {
+    .cm-info-container{
+        font-size: 0.3em;
+        margin: 0.7em;
+    }
+}

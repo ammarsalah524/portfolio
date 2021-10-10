@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ammar Salah | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="src/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/gravity.css">
+    <link rel="stylesheet" href="css/contactme.css">
     <script src="lib/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="lib/index.js"></script>
@@ -19,7 +20,7 @@
 <body>
     <!-- Basic info Page -->
     <div class="page page1 full-height full-width flex-col align-center selected" num="0">
-        <div class="flex-1 full-height flex-row align-center">
+        <div class="media flex-1 full-height flex-row align-center">
             <!-- image card -->
             <div class="flex-1 flex-row align-center">
                 <div class="flex-1">
@@ -35,8 +36,10 @@
             <div class="vertical-line">
                 <div></div>
             </div>
-            <div class="flex-2">
-                <div class="mycard_info info-1 hidden">Hi! I am Ammar Salah</div>
+            <div class="horizontal-line">
+                <div></div>
+            </div>
+            <div class="myinfo">
                 <h4 class="ml6 line1">
                     <span class="text-wrapper">
                         <span class="letters mycard_info info-1">
@@ -76,183 +79,191 @@
         </div>
     </div>
     <!-- Navigation Page -->
-    <div class="page full-height flex-row align-center perspective pad-lr-2em hidden" num="1">
-        <div class="small-card blur-box card1 card-animate-0" id="card1" onclick="slideDown()">
-            <div class="card-page"></div>
-            <div class="card-desc">
-                <div class="cd-title">
-                    <div class="cdt-text">
-                        Personal Info
-                    </div>
-                </div>
-                <div class="cd-info">
-                    <div class="cdi-text">
-                        Welcome back! <br>
-                        <br>
-                        Please click here to go back to the previous page.<br>
-                        <br>
-                        Thanks for visiting 😊
-                    </div>
-                </div>
-            </div>
-            <div class="card-cover center">
-                <div class="card-bg"></div>
-                <div class="sc-header">
-                    <div class="sc-icon">
-                        <div class="sc-rounded-border">
-                            <div class="sc-icon-pic">
-                                <img class="heigh120" src="src/img/ico/dev2.png" height="120px">
+    <div class="page page2 full-height align-center perspective hidden" num="1">
+        <div class="cards-container full-height flex-row align-center">
+            <div class="full-width">
+                <div class="center">
+                    <div class="small-card blur-box card1 card-animate-0" id="card1">
+                        <div class="card-page"></div>
+                        <div class="card-desc" onclick="slideDown()">
+                            <div class="cd-title">
+                                <div class="cdt-text">
+                                    Personal Info
+                                </div>
+                            </div>
+                            <div class="cd-info">
+                                <div class="cdi-text">
+                                    Welcome back! <br>
+                                    <br>
+                                    Please click here to go back to the previous page.<br>
+                                    <br>
+                                    Thanks for visiting 😊
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-cover center">
+                            <div class="card-bg"></div>
+                            <div class="sc-header">
+                                <div class="sc-icon">
+                                    <div class="sc-rounded-border">
+                                        <div class="sc-icon-pic">
+                                            <img class="heigh120" src="src/img/ico/dev2.png" height="120px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-caption">
+                                    <div class="sc-cap-text">Personal Info</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc-caption">
-                        <div class="sc-cap-text">Personal Info</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="small-card blur-box card2 card-animate-0" id="card2">
-            <div class="card-page"></div>
-            <div class="card-desc">
-                <div class="cd-title">
-                    <div class="cdt-text">
-                        Knowledge
-                    </div>
-                </div>
-                <div class="cd-info">
-                    <div class="cdi-text">
-                        For more information about my studies, languages I learn and the knowledge I acquired during my programming and designing career,<br>
-                        <br>
-                        Please click here.
-                    </div>
-                </div>
-            </div>
-            <div class="card-cover center">
-                <div class="card-bg"></div>
-                <div class="sc-header">
-                    <div class="sc-icon">
-                        <div class="sc-rounded-border">
-                            <div class="sc-icon-pic">
-                                <img class="heigh120" src="src/img/ico/astro.png" height="120px">
-                                <!-- <i class="fa fa-grav" aria-hidden="true"></i> -->
+                    <div class="small-card blur-box card2 card-animate-0" id="card2">
+                        <div class="card-page"></div>
+                        <div class="card-desc" onclick="slidePage(3)">
+                            <div class="cd-title">
+                                <div class="cdt-text">
+                                    Knowledge
+                                </div>
+                            </div>
+                            <div class="cd-info">
+                                <div class="cdi-text">
+                                    For more information about my studies, languages I learned and the knowledge I acquired during my programming and designing career,<br>
+                                    <br>
+                                    Please click here.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-cover center">
+                            <div class="card-bg"></div>
+                            <div class="sc-header">
+                                <div class="sc-icon">
+                                    <div class="sc-rounded-border">
+                                        <div class="sc-icon-pic">
+                                            <img class="heigh120" src="src/img/ico/astro.png" height="120px">
+                                            <!-- <i class="fa fa-grav" aria-hidden="true"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-caption">
+                                    <div class="sc-cap-text">Knowledge</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc-caption">
-                        <div class="sc-cap-text">Knowledge</div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="small-card blur-box card3 card-animate-0" id="card3" onclick="slideUp()">
-            <div class="card-page"></div>
-            <div class="card-desc">
-                <div class="cd-title">
-                    <div class="cdt-text">
-                        Portfolio
-                    </div>
-                </div>
-                <div class="cd-info">
-                    <div class="cdi-text">
-                        There is no doubt that the developer's portfolio is his biography.<br>
-                        <br>
-                        To see the works that I have programmed and designed..<br>
-                        <br>
-                        click here.
-                    </div>
-                </div>
-            </div>
-            <div class="card-cover center">
-                <div class="card-bg"></div>
-                <div class="sc-header">
-                    <div class="sc-icon">
-                        <div class="sc-rounded-border">
-                            <div class="sc-icon-pic">
-                                <!-- <img class="heigh120" src="src/img/ico/i.png" height="120px"> -->
-                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <div class="center">
+                    <div class="small-card blur-box card3 card-animate-0" id="card3">
+                        <div class="card-page"></div>
+                        <div class="card-desc" onclick="slideUp()">
+                            <div class="cd-title">
+                                <div class="cdt-text">
+                                    Portfolio
+                                </div>
+                            </div>
+                            <div class="cd-info">
+                                <div class="cdi-text">
+                                    There is no doubt that the developer's portfolio is his biography.<br>
+                                    <br>
+                                    To see the works that I developed and designed..<br>
+                                    <br>
+                                    click here.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-cover center">
+                            <div class="card-bg"></div>
+                            <div class="sc-header">
+                                <div class="sc-icon">
+                                    <div class="sc-rounded-border">
+                                        <div class="sc-icon-pic">
+                                            <!-- <img class="heigh120" src="src/img/ico/i.png" height="120px"> -->
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-caption larger">
+                                    <div class="sc-cap-text">Portfolio</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc-caption larger">
-                        <div class="sc-cap-text">Portfolio</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="small-card blur-box card4 card-animate-0" id="card4">
-            <div class="card-page"></div>
-            <div class="card-desc">
-                <div class="cd-title">
-                    <div class="cdt-text">
-                        Experiences
-                    </div>
-                </div>
-                <div class="cd-info">
-                    <div class="cdi-text">
-                        All I know is that the door to gaining experience will not be closed. <br>
-                        The more information I gain, the greater my thirst for gaining more and more..<br>
-                        <br>
-                        Click here to see my experiences.
-                    </div>
-                </div>
-            </div>
-            <div class="card-cover center">
-                <div class="card-bg"></div>
-                <div class="sc-header">
-                    <div class="sc-icon">
-                        <div class="sc-rounded-border">
-                            <div class="sc-icon-pic">
-                                <img class="heigh120" src="src/img/ico/Explorer.png" height="120px">
-                                <!-- <i class="fa fa-wpexplorer" aria-hidden="true"></i> -->
+                    <div class="small-card blur-box card4 card-animate-0" id="card4">
+                        <div class="card-page"></div>
+                        <div class="card-desc" onclick="slidePage(4)">
+                            <div class="cd-title">
+                                <div class="cdt-text">
+                                    Experiences
+                                </div>
+                            </div>
+                            <div class="cd-info">
+                                <div class="cdi-text">
+                                    All I know is that the door to gaining experience will not be closed. <br>
+                                    The more information I gain, the greater my thirst for gaining more and more..<br>
+                                    <br>
+                                    Click here to see my experiences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-cover center">
+                            <div class="card-bg"></div>
+                            <div class="sc-header">
+                                <div class="sc-icon">
+                                    <div class="sc-rounded-border">
+                                        <div class="sc-icon-pic">
+                                            <img class="heigh120" src="src/img/ico/Explorer.png" height="120px">
+                                            <!-- <i class="fa fa-wpexplorer" aria-hidden="true"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-caption">
+                                    <div class="sc-cap-text">Experiences</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc-caption">
-                        <div class="sc-cap-text">Experiences</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="small-card blur-box card5 card-animate-0" id="card5">
-            <div class="card-page"></div>
-            <div class="card-desc">
-                <div class="cd-title">
-                    <div class="cdt-text">
-                        Contact Me
-                    </div>
-                </div>
-                <div class="cd-info">
-                    <div class="cdi-text">
-                        For information on how to contact me<br>
-                        <br>
-                        Please click here.<br>
-                        <br>
-                        Have a nice day 😊.
-                    </div>
-                </div>
-            </div>
-            <div class="card-cover center">
-                <div class="card-bg"></div>
-                <div class="sc-header">
-                    <div class="sc-icon">
-                        <div class="sc-rounded-border">
-                            <div class="sc-icon-pic">
-                                <!-- <img class="heigh120" src="src/img/ico/i.png" height="120px"> -->
-                                <img src="src/img/ico/contact-us.png" height="10px">
+                    <div class="small-card blur-box card5 card-animate-0" id="card5">
+                        <div class="card-page"></div>
+                        <div class="card-desc" onclick="slidePage(5)">
+                            <div class="cd-title">
+                                <div class="cdt-text">
+                                    Contact Me
+                                </div>
+                            </div>
+                            <div class="cd-info">
+                                <div class="cdi-text">
+                                    For information on how to contact me<br>
+                                    <br>
+                                    Please click here.<br>
+                                    <br>
+                                    Have a nice day 😊.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sc-caption">
-                        <div class="sc-cap-text">Contact Me</div>
+                        <div class="card-cover center">
+                            <div class="card-bg"></div>
+                            <div class="sc-header">
+                                <div class="sc-icon">
+                                    <div class="sc-rounded-border">
+                                        <div class="sc-icon-pic">
+                                            <!-- <img class="heigh120" src="src/img/ico/i.png" height="120px"> -->
+                                            <img src="src/img/ico/contact-us.png" height="10px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-caption">
+                                    <div class="sc-cap-text">Contact Me</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio -->
-    <div class="page full-height flex-row align-center hidden" num="2">
+    <div class="page page3 full-height flex-row align-center hidden" num="2">
         <!-- image card -->
-        <div class="flex-1 full-height flex-row align-center portfolio-nav">
+        <div class="pf-sidebar flex-1 full-height flex-row align-center portfolio-nav">
             <div class="full-width">
                 <div class="pn-item flex-row align-center" onclick="openPage(this, 'home')">
                     <div class="flex-1 center">
@@ -320,10 +331,10 @@
                 </div>
             </div>
         </div>
-        <div class="flex-6 full-height ">
+        <div class="pf-file flex-4 full-height ">
             <!-- AXTRO ERP -->
             <div id="axtro-erp" class="p-page full-height flex-col align-center selected">
-                <div class="flex-1 full-width portfolio-header">
+                <div class="portfolio-header full-width">
                     <div class="flex-row align-center full-width full-height">
                         <div class="project-logo flex-row align-center center">
                             <div class="logo-img axtro-erp">
@@ -336,11 +347,14 @@
                             <div class="project-desc">The most simple and fast business management system.</div>
                             <div class="project-available"><i class="fa fa-windows pad-right-5px" aria-hidden="true"></i> Will be vailable soon on windows.</div>
                         </div>
+                        <div class="minue pad-lr-05em" onclick="showSideBar()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="p-info flex-4 flex-row full-width">
                     <div class="flex-1 flex-col full-height">
-                        <div class="flex-5 full-width">
+                        <div class="overflow-hidden flex-5 full-width">
                             <div class="pf-image-container pad-1em center">
                                 <div class="pf-img inline-block center selected" num="0">
                                     <img src="src/img/ico/Axtro-ERP.png" alt="">
@@ -348,6 +362,7 @@
                                 </div>
                                 <div class="pf-img inline-block center hidden" num="1">
                                     <img src="src/img/portfolio/axtro-erp/main-window.png" alt="">
+                                    <!-- <div class="pf-image axmw"></div> -->
                                     <div class="pf-imgae-lighter"></div>
                                 </div>
                                 <div class="pf-img inline-block center hidden" num="2">
@@ -371,7 +386,10 @@
                     <div class="vertical-line">
                         <div></div>
                     </div>
-                    <div class="flex-1 full-height flex-row align-center">
+                    <div class="horizontal-line">
+                        <div></div>
+                    </div>
+                    <div class="flex-1 flex-row align-center">
                         <div class="porfolio-info pad-lr-05em">
                             <div class="xx-large col_cornflowerblue">Axtro-Soft ERP <div class="large und-itm col_olivedrab">is enterprise resource planning (ERP) used by a company to manage key parts of its business such as accounting, manufacturing, sales, and marketing.</div></div>
                             <div class="large und-itm col_olivedrab">I am developing it on windows system based on Delphi programming language and also based on a library I have previously developed called ArORM.</div>
@@ -382,7 +400,7 @@
             </div>
             <!-- AXTRO DASHBOARD -->
             <div id="axtro-dashboard" class="p-page full-height flex-col align-center hidden">
-                <div class="flex-1 full-width portfolio-header">
+                <div class="full-width portfolio-header">
                     <div class="flex-row align-center full-width full-height">
                         <div class="project-logo flex-row align-center center">
                             <div class="logo-img axtro-erp">
@@ -399,12 +417,15 @@
                                 <div class="inline-block va-middle">Node.js library, Available for downloading.</div>
                             </div>
                         </div>
+                        <div class="minue pad-lr-05em" onclick="showSideBar()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
     
                 <div class="p-info flex-4 flex-row full-width">
                     <div class="flex-1 flex-col full-height">
-                        <div class="flex-5 full-width">
+                        <div class="overflow-hidden flex-5 full-width">
                             <div class="pf-image-container pad-1em center">
                                 <div class="pf-img inline-block center selected" num="0">
                                     <img src="src/img/ico/Axtro-Dashboard.png" alt="">
@@ -439,7 +460,10 @@
                     <div class="vertical-line">
                         <div></div>
                     </div>
-                    <div class="flex-1 full-height flex-row align-center">
+                    <div class="horizontal-line">
+                        <div></div>
+                    </div>
+                    <div class="flex-1 flex-row align-center">
                         <div class="porfolio-info pad-lr-05em">
                             <div class="xx-large col_cornflowerblue">Axtro-Soft Dashboard<div class="large und-itm col_olivedrab">is a Node.js library I built to make API development faster, fewer errors and better performance.</div></div>
                             <div class="large und-itm col_olivedrab">Currently it only supports Laravel framework, later it will be developed to support both CodeIgnator and Node.js.</div>
@@ -452,7 +476,7 @@
             </div>
             <!-- Courses -->
             <div id="axtro-courses" class="p-page full-height flex-col align-center hidden">
-                <div class="flex-1 full-width portfolio-header">
+                <div class="full-width portfolio-header">
                     <div class="flex-row align-center full-width full-height">
                         <div class="project-logo flex-row align-center center">
                             <div class="logo-img axtro-erp">
@@ -469,12 +493,15 @@
                                 <div class="inline-block va-middle">Node.js library, Available for downloading.</div>
                             </div>
                         </div>
+                        <div class="minue pad-lr-05em" onclick="showSideBar()">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
     
                 <div class="p-info flex-4 flex-row full-width">
                     <div class="flex-1 flex-col full-height">
-                        <div class="flex-5 full-width">
+                        <div class="overflow-hidden flex-5 full-width">
                             <div class="pf-image-container pad-1em center">
                                 <div class="pf-img inline-block center selected" num="0">
                                     <img src="src/img/ico/youtube-400.png" alt="">
@@ -505,7 +532,10 @@
                     <div class="vertical-line">
                         <div></div>
                     </div>
-                    <div class="flex-1 full-height flex-row align-center">
+                    <div class="horizontal-line">
+                        <div></div>
+                    </div>
+                    <div class="flex-1 flex-row align-center">
                         <div class="porfolio-info pad-lr-05em">
                             <div class="xx-large col_cornflowerblue">Courses<div class="large und-itm col_olivedrab">Out of my belief that whoever has acquired knowledge must transfer it and not monopolize it, I strive to train and assist those who need to develop their knowledge in the field of programming and design.</div></div>
                             <div class="large und-itm col_olivedrab">I have trained informatics engineering students in several fields, especially programming in each of C, C++, C#, Java, PHP and Delphi programming languages.</div>
@@ -517,7 +547,100 @@
                 </div>
             </div>                 
         </div>
-    </div> 
+    </div>
+    <!-- Knowledge -->
+    <div class="page page4 full-height flex-col align-center hidden" num="3">
+        <div class="cm-info-container">
+            <div class="cm-icon inline-block va-middle">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="cm-value inline-block va-middle">
+                <a href="#" onclick="slidePage(1)">HOME</a>
+            </div>
+        </div>
+        <div class="info-card">This page is under development.</div>
+    </div>
+    <!-- Experiences -->
+    <div class="page page5 full-height flex-col align-center hidden" num="4">
+        <div class="cm-info-container">
+            <div class="cm-icon inline-block va-middle">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="cm-value inline-block va-middle">
+                <a href="#" onclick="slidePage(1)">HOME</a>
+            </div>
+        </div>
+        <div class="info-card">This page is under development.</div>
+    </div>
+    <!-- Contact Me -->
+    <div class="page page6 full-height flex-row align-center hidden" num="5">
+        <div class="flex-col margin-auto">
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="#" onclick="slidePage(1)">HOME</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="tel::+963943551462"> +963 943 551 462</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="https://wa.me/963943551462">+963 943 551 462</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="https://t.me/ammarsalah524">+963 943 551 462</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="mailto:ammar.salah.524@gmail.com">ammar.salah.524@gmail.com</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="https://github.com/ammarsalah524">github.com/ammarsalah524</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-gitlab" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="https://gitlab.com/ammarsalah524">gitlab.com/ammarsalah524</a>
+                </div>
+            </div>
+            <div class="cm-info-container">
+                <div class="cm-icon inline-block va-middle">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <div class="cm-value inline-block va-middle">
+                    <a href="https://linkedin.com/in/ammarsalah524">linkedIn.com/in/ammarsalah524</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>setTimeout(function(){animationInfo()}, 2000);</script>
 </body>
