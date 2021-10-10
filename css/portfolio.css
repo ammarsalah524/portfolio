@@ -266,7 +266,7 @@
     }
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 560px){
     .page3 .horizontal-line{
         display: none;
     }
